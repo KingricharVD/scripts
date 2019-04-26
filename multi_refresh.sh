@@ -22,10 +22,10 @@ echo "Removing binaries..."
 cd /usr/local/bin
 rm -rf northernd northern-cli northern-tx
 echo "Downloading latest binaries"
-wget https://github.com/zabtc/Northern/releases/download/2.4.0/northern-2.4.0-x86_64-linux-gnu.tar.gz
-tar -xzf northern-2.4.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/KingricharVD/Northern/archive/2.4.0.tar.gz
+tar -xzf 2.4.0.tar.gz
 sudo chmod 755 -R  /usr/local/bin/northern*
-rm -rf northern-2.4.0-x86_64-linux-gnu.tar.gz
+rm -rf 2.4.0.tar.gz
 echo "Deleting old nodes from node config files"
 sed -i '/addnode/d' /home/northern/.northern/northern.conf
 sed -i '/addnode/d' /home/northern2/.northern/northern.conf
